@@ -1,0 +1,13 @@
+-main CommandLineTools
+-neko ../../nme.n
+-cp src
+-cp src/helpers
+-cp src/project
+-cp ../..
+-D nme
+-D ndll_silent_fail
+-lib format
+-lib gm2d
+-lib hxcpp
+--remap flash:nme
+-debug

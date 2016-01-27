@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- NMML reference: https://gist.github.com/1763850 -->
+	
+	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
+	<meta title="TrigonometricPark" package="org.gotouch.TrigonometricPark" version="1.0.0" company="GoTouch" />
+	
+	<!-- output -->
+	<app main="org.gotouch.cls.Main" file="Trigonometric Park" path="bin" />
+	
+	<set name="fullscreen" if="android" />
+
+	<window width="1024" height="600" fps="60" orientation="landscape" resizable="false" />
+	<window width="0" height="0" background="0xFFFFFF"  if="fullscreen" />
+	
+	<!-- classpath, haxe libs -->
+	<source path="src" />
+	<haxelib name="actuate"/>
+	<haxelib name="nme" />
+	
+	
+	<!-- assets -->
+	<icon path="assets/icono.png" />
+	<assets path="assets" rename="assets" />
+	
+	<!-- DLLs -->
+	<ndll name="std" />
+	<ndll name="regexp" />
+	<ndll name="zlib" />
+	<ndll name="nme" haxelib="nme" />
+
+	<!-- optimize JS output -->
+	<haxeflag name="--dead-code-elimination" if="html5" />
+	<haxeflag name="--js-modern" if="html5" />
+	
+</project>

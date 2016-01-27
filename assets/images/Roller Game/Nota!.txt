@@ -1,0 +1,2 @@
+En las pantallas que tienen cuado negro, hay que colocar en que nivel se encuentra la persona y es el estado,
+si paso, si esta en pausa el puntaje, si ya lo habia jugado poder seguir al siguiente
